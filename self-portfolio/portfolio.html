@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo1.png" class="logo">
+                <ul id= "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I am  <span>Mayukh Majumder</span>  <br> from Kolkata</h1>
+            </div>
+        </div>
+        <div id ="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/photo 2.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="Sub-title">
+                         About Me</h1>
+                        <p>Quick learner with academic and technical
+                            knowledge to succeed in different
+                            roles.Ready to expand horizons with
+                            additional knowledge gained from training
+                            and experience.Always ready to help
+                            others and use abilities to support team
+                            goals.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id= "skills">
+                                <ul>
+                                    <li><span>1.Coding</span><br> JAVA,C,C++ Problem solving </li>
+                                    <li><span>2.Web Development</span><br> Desiging Website using HTML CSS and JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                             <ul>
+                                 <li><span>1.Persuing B.Tech(2021-2025) </span><br> Institute of Engineering & Management,CSE </li>
+                                 <li><span>2.Higher Secondery </span><br> Gorabazar I.C.Institution(2019-2021)</li>
+                                 <li><span>3.Secondery </span><br> Mary Immaculate school(2013-2019)</li>
+                             </ul> 
+                         </div>
+                     </div>
+                 </div>
+             </div>
+    </div>
+    <div id="service">
+        <div class="container">
+            <h1 class="Sub-title">My services</h1>
+            <div class="services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                   <h2>Web Developer</h2>
+                   <p>Using HTML,CSS,Javascript <p></p> I used to make websites.<p>Newedge technology Flutter is also used</p>
+                   <a href="#">Learn more</a>
+               </div> 
+               <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Coding Problem solver</h2>
+                <p>Using C,C++ <p></p> i used solve Problems,<p> of leetcode ,hacker rank etc</p>
+                <a href="#">Learn More</a>
+            </div> 
+            </div>
+    
+        </div>
+    
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>calculator</h3>
+                        <p>It's a HTML ,CSS and JavaScript based project that<p> can calculate all the mathematical calculations  <p></p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Netflix Clone </h3>
+                        <p>It's a webpage of Netflix<p>which is completely same as the given website<p></p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+             <a href="#"class="btn">See More</a>
+        </div>
+    </div>
+    
+    
+    <!-------------------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mmayukh769@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+919064212950</p>
+                    <div class="div social-icons">
+                        <a href="https://www.facebook.com/aritradutta.aritradutta?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/aritrad37215486"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/oreooooo___13?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aritra-dutta-4472a6246"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Mayukh Majumder resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"name="Name" placeholder="Your Name" required>
+                        <input type="email"name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Made by Mayukh Majumder</p>
+        </div>
+    </div>
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function openmenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLjd_GK_hKawWDJFZ5KKlKxym66B928sxFVXCev-Gup9fQp1gq_1jMcxr4IObqy1eZyQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+    </html>
+    
+</body>
+</html>
